@@ -1,4 +1,4 @@
-package Models;
+package com.MasterSetup.Models;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -72,3 +72,4 @@ public class OfficeMaster {
 	 private Date fmFPosDateUpd;
 
 }
+
