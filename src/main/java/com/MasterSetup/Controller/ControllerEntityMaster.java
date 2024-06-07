@@ -20,7 +20,7 @@ public class ControllerEntityMaster {
        return servEntMst.getString();
     }
 	
-	@GetMapping("/Master/entitylist")
+	@GetMapping("/setup/getentlist")
     public List<EntityMaster> getEntityList(){
        return servEntMst.getEntityList();
     }

@@ -11,84 +11,92 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "COMPANY")
+@Table(name = "ENTITY_MASTER")
 public class EntityMaster {
 	
 	@Id
-	@Column(name="COMP_NO",length=10,  nullable = false)
-	private String compNo;
+	@Column(name="ENTY_TYPE",length=2,  nullable = false)
+	private String entyType;
 	
-	@Column(name="COMP_TYPE",length=2,  nullable = false)
-	private String compType;
+	@Column(name="ENTY_ADDRESS",length=200)
+	private String entyAddress;
 	
-	@Column(name="COMP_LOGO",length=100)
-	private String compLogo;
+	@Column(name="ENTY_CITY",length=50)
+	private String entyCity;
 	
-	@Column(name="COMP_CURRENCY",length=10)
-	private String compCurr;
+	@Column(name="ENTY_COUNTY",length=50)
+	private String entyCountry;
 	
-	@Column(name="COMP_NAME",length=100)
-	private String compName;
+	@Column(name="ENTY_CURRENCY",length=5)
+	private String entyCurr;
 	
-	@Column(name="COMP_SHORT_NAME",length=20)
-	private String compShortName;
+	@Column(name="ENTY_EMAIL", length=50)
+	private String entyEmail;
 	
-	@Column(name="COMP_ADDRESS",length=200)
-	private String compAddress;
+	@Column(name="ENTY_ENABLE", length=1)
+	private String entyEnable;
 	
-	@Column(name="COMP_CITY",length=50)
-	private String compCity;
+	@Column(name="ENTY_FAX", length=20)
+	private String entyFax;
 	
-	@Column(name="COMP_PROVINCE",length=50)
-	private String compProvince;
+	@Column(name="ENTY_FAX2", length=20)
+	private String entyFax2;
 	
-	@Column(name="COMP_COUNTY",length=50)
-	private String compCountry;
+	@Column(name="ENTY_HANDPHONE", length=20)
+	private String entyHandPhone;
 	
-	@Column(name="COMP_ZIPCODE",length=8)
-	private String compZipCode;
+	@Column(name="ENTY_IP_PORT", length=20)
+	private String entyIpPort;
 	
-	@Column(name="COMP_TAXID",length=20)
-	private String compTaxId;
+	@Column(name="ENTY_NAME",length=100)
+	private String entyName;
 	
-	@Column(name="COMP_SB_NO",length=30)
-	private String compSbNo;
+	@Column(name="ENTY_NO",length=10)
+	private String entyNo;
 	
-	@Column(name="COMP_SB_DATE")
-	private Date compSbDate;
+	@Column(name="ENTY_PHONE", length=20)
+	private String entyPhone;
 	
-	@Column(name="COMP_EMAIL", length=50)
-	private String compEmail;
+	@Column(name="ENTY_PHONE2", length=20)
+	private String entyPhone2;
 	
-	@Column(name="COMP_PHONE", length=20)
-	private String comopPhone;
+	@Column(name="ENTY_POBOX", length=10)
+	private String entyPoBox;
 	
-	@Column(name="COMP_FAX", length=20)
-	private String compFax;
+	@Column(name="ENTY_PROVINCE",length=50)
+	private String entyProvince;
 	
-	@Column(name="COMP_PHONE2", length=20)
-	private String compPhone2;
+	@Column(name="ENTY_SB_DATE")
+	private Date entySbDate;
 	
-	@Column(name="COMP_FAX2", length=20)
-	private String compFax2;
+	@Column(name="ENTY_SB_NO",length=30)
+	private String entySbNo;
 	
-	@Column(name="COMP_POBOX", length=10)
-	private String compPoBox;
+	@Column(name="ENTY_SHORT_NAME",length=20)
+	private String entyShortName;
 	
-	@Column(name="COMP_URI", length=20)
-	private String compURI;
+	@Column(name="ENTY_TAXID",length=20)
+	private String entyTaxId;
+		
+	@Column(name="ENTY_URI", length=20)
+	private String entyURI;
 	
-	@Column(name="COMP_WEBSITE", length=100)
-	private String compWebSite;
+	@Column(name="ENTY_WEBSITE", length=100)
+	private String entyWebSite;
 	
-	@Column(name="COMP_HANDPHONE", length=20)
-	private String compHandPhone;
+	@Column(name="ENTY_ZIPCODE",length=8)
+	private String entyZipCode;
 	
-	@Column(name="COMP_IP_PORT", length=20)
-	private String compIpPort;
+	@Column(name="AC_USER_CRE",length=20)
+	private String entyUserCre;
 	
-	@Column(name="COMP_ENABLE", length=1)
-	private String compEnbale;
+	@Column(name="AC_DATE_CRE")
+	private Date entyDateCre;
 	
+	@Column(name="AC_USER_UPD",length=20)
+	private String entyUserUpd;
 	
+	@Column(name="AC_DATE_UPD")
+	private Date entyDateUpd;
+		
 }
